@@ -3,10 +3,10 @@
     Enabled = $true
 
     # ĐỔI đường dẫn dưới đây thành file .bat, .cmd, .ps1 hoặc .exe của dự án Kokoro.
-    RunnerPath = '.\agent_tts.bat'
+    RunnerPath = 'G:\03_BAITAP\my-browser-agent\tools\web-to-audio-server\agent_tts.bat'
 
     # Có thể để trống; khi để trống sẽ dùng thư mục chứa RunnerPath.
-    WorkingDirectory = ''
+    WorkingDirectory = 'G:\03_BAITAP\my-browser-agent\tools\web-to-audio-server'
 
     # {input} sẽ được thay bằng đường dẫn tuyệt đối của latest-response.txt.
     # Ví dụ runner của bạn dùng: run-tts.bat --input-file <path>
@@ -17,5 +17,5 @@
     RunInBackground = $true
 
     # Chỉ áp dụng khi RunInBackground = $true.
-    HiddenWindow = $false
+    HiddenWindow = $true
 }

@@ -51,6 +51,7 @@ Spoken response phải giữ đúng ý nghĩa của câu trả lời chính như
 - Với tiêu đề, đọc như một câu dẫn ngắn.
 - Giữ nguyên cảnh báo, kết luận và thông tin quan trọng.
 - Mở rộng chữ viết tắt khi chắc chắn về nghĩa; nếu không chắc, giữ nguyên.
+- Mô hình TTS được tích hợp thư viện chuẩn hóa `sea-g2p` có khả năng đọc song ngữ Anh-Việt rất tốt. Do đó, đối với các thuật ngữ tiếng Anh kỹ thuật phổ biến (như API, SQL, JSON, Git, Docker, Python, CUDA, UI, AI...), hãy giữ nguyên từ gốc tiếng Anh thay vì viết phiên âm tiếng Việt (như a-p-i, cu-đa...), công cụ G2P sẽ tự động xử lý phát âm chuẩn xác.
 - Với số liệu quan trọng, giữ đủ giá trị và đơn vị.
 - Không thêm nhận định mới không có trong câu trả lời chính.
 - Không đọc citation marker, metadata, ID nội bộ hoặc đường dẫn tải xuống dạng sandbox.

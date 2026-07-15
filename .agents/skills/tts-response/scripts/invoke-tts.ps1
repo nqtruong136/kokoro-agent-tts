@@ -105,10 +105,20 @@ if ($runInBackground) {
 
     # Sử dụng WMI/CIM để tạo tiến trình độc lập hoàn toàn khỏi Job Object của cha
     try {
-        $result = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{
+        $si = $null
+        if ($hiddenWindow) {
+            $si = New-CimInstance -ClassName Win32_ProcessStartup -Property @{ ShowWindow = [uint16]0 } -ClientOnly
+        }
+        
+        $wmiArgs = @{
             CommandLine = $cmdLine
             CurrentDirectory = $workingDirectory
         }
+        if ($null -ne $si) {
+            $wmiArgs.ProcessStartupInformation = $si
+        }
+
+        $result = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments $wmiArgs
         if ($result.ReturnValue -eq 0) {
             Write-Host "TTS runner started via WMI. ProcessId: $($result.ProcessId)"
             exit 0
