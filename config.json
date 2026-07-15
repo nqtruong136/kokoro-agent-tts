@@ -1,0 +1,8 @@
+{
+  "tts_engine": "kokoro",
+  "kokoro_voice": "hung_thinh",
+  "kokoro_device": "cuda",
+  "kokoro_model_path": "model/kokoro_vi.pth",
+  "kokoro_voicepack_path": "model/voicepacks/hung_thinh.pt",
+  "kokoro_config_path": "model/config.json"
+}
