@@ -110,3 +110,27 @@ Nếu bạn muốn đóng gói và mang thư mục `.agents` này sang máy khá
 ```
 
 *Lưu ý*: Với cấu hình tương đối ở trên, khi người dùng mở thư mục chứa bản release này bằng VS Code/Cursor làm thư mục gốc (Workspace), AI Agent của họ sẽ tự động gọi được trình phát phát âm thanh mà không cần cấu hình lại thủ công.
+
+
+---
+
+## 📄 Bản quyền & Ghi công (License & Attribution)
+
+### 1. Giấy phép sử dụng (License)
+Dự án này được phát hành dưới giấy phép **[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)** (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International).
+* **Phi thương mại (Non-Commercial):** Nghiêm cấm mọi hành vi sử dụng mã nguồn, kịch bản đóng gói (`.bat`) hoặc bộ Voicepacks đi kèm trong dự án này vào mục đích thương mại trực tiếp hoặc gián tiếp khi chưa có sự đồng ý bằng văn bản của tác giả.
+* **Ghi nguồn (Attribution):** Mọi bản phân phối lại hoặc phát triển dựa trên dự án này phải ghi rõ nguồn dẫn về repository gốc: [nqtruong136/kokoro-agent-tts](https://github.com/nqtruong136/kokoro-agent-tts).
+
+### 2. Ghi công mô hình gốc & Bản Việt hóa (Model Attribution)
+Trình phát này tích hợp và sử dụng sức mạnh của mô hình chuyển đổi văn bản thành giọng nói tiếng Việt chất lượng cao, được xây dựng từ hai nguồn đóng góp vĩ đại:
+* **Mô hình gốc Kokoro-82M:**
+  * **Tác giả:** @hexgrad
+  * **Đặc điểm:** Mô hình TTS mã nguồn mở siêu nhẹ (82 triệu tham số) nhưng đạt chất lượng tương đương các giải pháp thương mại lớn.
+  * **Giấy phép:** Apache-2.0 License.
+* **Bản Việt hóa Kokoro-Vietnamese:**
+  * **Tác giả:** @iamdinhthuan (Đinh Thuận)
+  * **Đặc điểm:** Tinh chỉnh (fine-tuned) trên tập dữ liệu tiếng Việt chất lượng cao **LarVoice**, giúp tạo ra các giọng đọc nam/nữ của cả hai miền Nam và Bắc cực kỳ truyền cảm, tự nhiên.
+  * **Giấy phép:** Kế thừa giấy phép Apache-2.0.
+
+Chúng tôi xin bày tỏ lòng biết ơn sâu sắc tới `@hexgrad` vì nền tảng mô hình vượt trội và `@iamdinhthuan` vì những nỗ lực tuyệt vời trong việc mang lại giọng đọc tiếng Việt tự nhiên cho cộng đồng!
+
